@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Bingo/static/css/main.ee18cc30.css",
-    "main.js": "/Bingo/static/js/main.c28ba502.js",
+    "main.css": "/Bingo/static/css/main.21483304.css",
+    "main.js": "/Bingo/static/js/main.a2730a01.js",
     "static/media/daniel-leone-v7daTKlZzaw-unsplash.jpg": "/Bingo/static/media/daniel-leone-v7daTKlZzaw-unsplash.d2b0bb5b1b853c850322.jpg",
     "index.html": "/Bingo/index.html",
-    "main.ee18cc30.css.map": "/Bingo/static/css/main.ee18cc30.css.map",
-    "main.c28ba502.js.map": "/Bingo/static/js/main.c28ba502.js.map"
+    "main.21483304.css.map": "/Bingo/static/css/main.21483304.css.map",
+    "main.a2730a01.js.map": "/Bingo/static/js/main.a2730a01.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee18cc30.css",
-    "static/js/main.c28ba502.js"
+    "static/css/main.21483304.css",
+    "static/js/main.a2730a01.js"
   ]
 }
