@@ -1,0 +1,269 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* color: white; */
+}
+button{
+  cursor: pointer;
+}
+li{
+  list-style: none;
+}
+.App {
+  text-align: center;
+
+}
+
+.tbl-btns {
+  background: #fff;
+  /* border: 2px solid #999; */
+  border-radius: 7px ;
+  float: left;
+  font-size: 30px;
+  line-height: 34px;
+  height: 50px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0px;
+  text-align: center;
+  width: 50px;
+  
+}
+.tbl-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.g-main-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3em;
+  position: relative;
+}
+.g-points{
+  margin-bottom: 1.5em;
+}
+.btn-value {
+  height: 37.2px;
+  border: 2px solid black;
+  width: 114px;
+  margin-top: 1em;
+  border-radius: 10px;
+  background: #e8ba08;
+  color: white;
+  font-size: 1.1em;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url("./images/daniel-leone-v7daTKlZzaw-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header{
+  width: 100%;
+}
+nav {
+  height: 3.5rem;
+  width: 100vw;
+  background: #0c2021;
+}
+.nav-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+.options{
+  display: inline-flex;
+  justify-content: flex-end;
+  /* margin-right: 8em; */
+  /* align-items: center; */
+  height: 100%;
+  gap: 140px;
+  z-index: 2;
+}
+.options li ,.options a{
+  /* padding: 0 50px; */
+  font-size: 1.1em;
+  padding-top: 10px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.40s ease;
+}
+/* .options .size:hover .size-options,.level:hover .level-options{
+  opacity: 1;
+
+} */
+.options #size,#level,#sound{
+  position: relative;
+}
+.visible{
+  background: #0c2021;
+  display: block;
+  position: absolute;
+  top: 86%;
+  width: 148%;
+  left: -24%;
+}
+.visible li{
+  padding: 12px 0px
+}
+.hide{
+  display: none;
+
+}
+.options .size-options li,.level-options li,.sound-options li{
+  font-size: large;
+  color: white;
+}
+
+.options li:hover ,.options a:hover{
+  color: aquamarine;
+}
+
+.computertable{
+  /* visibility: hidden;
+   */
+   filter: blur(5px);
+}
+.animation{
+  z-index: 100;
+  border: 2px solid orange;
+  position: absolute;
+  width: -moz-fit-content;
+  width: 45%;
+    height: 72%;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  background-color: skyblue;
+  /* border-radius: 20px; */
+  letter-spacing: 2px;
+  font-weight: bold;
+  
+}
+.animation button:nth-child(2){
+  position: absolute;
+    bottom: 32px;
+    width: fit-content;
+    padding: 4px;
+    height: fit-content;
+}
+.winnerclose{
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  margin: 5px;
+  background: none;
+  border: none;
+  font-size: 25px;
+  /* color: red; */
+  color: black;
+}
+
+@keyframes Score {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+.winner{
+  display: none;
+  position: absolute;
+}
+.winnerparent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 42.4px;
+}
+
+.Logo{
+  width: fit-content;
+}
+.Logo span{
+  font-size: 41px;
+  color: aquamarine;
+  letter-spacing: 10px;
+  font-weight: initial
+}
+
+.menu-icon{
+  display: none;
+}
+
+
+@media (max-width: 1010px) {
+  .nav-container{
+    justify-content:space-between;
+  }
+  .menu-icon button{
+    background: none;
+    border: none;
+    display: inline;
+  color: white;
+  padding-right: 26px;
+  font-size: 26px;
+  }
+.options{
+  display: none;
+  flex-direction: column;
+  gap: 0;
+  right: 0px;
+  position: absolute;
+  gap: -23px;
+  height: fit-content;
+  top: 56px;
+  justify-content: center;
+  background: #0c2021;
+  width: fit-content;
+
+}
+.visible{
+  top: 13px;
+  left: -163px;
+  width: 100%;
+}
+
+.menu-icon{
+  display: inline;
+}
+.nav-container{
+  padding-left: 26px;
+}
+.computertable{
+  display: none;
+}
+.animation{
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  width: 85%;
+    height: 60%;
+}
+.options li ,.options a{
+  padding: 21px 28px;
+}
+#winnerh1{
+  left: 60px;
+}
+}
+.range{
+  position: relative;
+}
